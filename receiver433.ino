@@ -1,19 +1,13 @@
 /*
-  433 MHz RF Module Receiver Demonstration 1
-  RF-Rcv-Demo-1.ino
-  Demonstrates 433 MHz RF Receiver Module
-  Use with Transmitter Demonstration 1
-
-  DroneBot Workshop 2018
-  https://dronebotworkshop.com
+  433 MHz RF module transmitter demonstration with AM2320 sensor
+  code by V Electronics JGW
+  https://www.youtube.com/@V_Electronics
 */
 
-// Include RadioHead Amplitude Shift Keying Library
 #include <RH_ASK.h>
-// Include dependant SPI Library 
 #include <SPI.h> 
 
-// Create Amplitude Shift Keying Object
+// amplitude shift keying object
 RH_ASK rf_driver;
 
 void setup()
@@ -30,7 +24,7 @@ void loop()
 {
     // Serial.println("START");
     // Set buffer to size of expected message
-    uint8_t buf[24];
+    uint8_t buf[13];
     uint8_t buflen = sizeof(buf);
     // Check if received packet is correct size
     if (rf_driver.recv(buf, &buflen))
