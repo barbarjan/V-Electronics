@@ -1,5 +1,5 @@
 /*
-  433 MHz RF module transmitter demonstration with AM2320 sensor
+  433 MHz RF module receiver demonstration with AM2320 sensor
   code by V Electronics JGW
   https://www.youtube.com/@V_Electronics
 */
