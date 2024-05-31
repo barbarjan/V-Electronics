@@ -10,7 +10,6 @@
 #include "Adafruit_AM2320.h"
 #include <string.h>
 
-
 // amplitude shift keying object
 RH_ASK rf_driver;
 
@@ -58,6 +57,4 @@ void loop()
     // Serial.println("sent packet");
     // Serial.print("Temp:"); Serial.println(am2320.readTemperature());
     // Serial.print("Hum:"); Serial.println(am2320.readHumidity());
-
-
 }
